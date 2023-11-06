@@ -5,17 +5,11 @@ import os
 from tadlib.visualize.heatmaps import *
 
 mcool = sys.argv[1]
-#loop = sys.argv[2]
-#tad = sys.argv[3]
-#input_gene = sys.argv[4]
-input_gene = sys.argv[2]
-norm = sys.argv[3]
+loop = sys.argv[2]
+tad = sys.argv[3]
+input_gene = sys.argv[4]
 res=10000
-tad = sys.argv[4]
-#'/data2/home/song7602/2.Data/3.Hi-C/K562/4.TAD/SRR1658693.ICE.tad.25000.txt'
-#'/data2/home/song7602/2.Data/3.Hi-C/K562/4.TAD/SRR1658694.ICE.tad.25000.txt'
 
-#pos_file = open(f'{sys.path[0]}/Gencode_Protein_Coding_POS_list.txt', 'r')
 pos_file = open(f'{sys.path[0]}/gencode_protein_coding_gene.hg38.tsv', 'r')
 n = 0
 D = {}
